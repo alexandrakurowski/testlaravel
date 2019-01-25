@@ -23,5 +23,7 @@ Route::group(
         Route::get('/user', function( Request $request ){
              return $request->user();
              });
+        Route::get('/offres', 'API/ OffresController@getoffres ');
+        Route::get('/offres/{id}', 'API\ OffresController@getCafe ');
     }
 );

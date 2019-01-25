@@ -1,3 +1,6 @@
+// on importe les package que l'on a besoin
+  import Vue from 'vue';
+  import router from './routes.js';
 
 /**
  * First we will load all of this project's JavaScript dependencies which
@@ -30,8 +33,7 @@ let token = document.head.querySelector('meta[name="csrf-token"]');
     console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
 
     
-   
-     import Vue from 'vue';
+
   
 
 /**
@@ -59,3 +61,4 @@ const app = new Vue({
     el: '#app'
 });
 
+new Vue({ router }).$mount('#app');
